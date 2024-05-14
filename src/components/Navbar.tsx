@@ -27,7 +27,15 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/courses">React js</HoveredLink>
             <HoveredLink href="/courses"> Next js</HoveredLink>
           </div>
+          
         </MenuItem>
+        <Link href={"/addcourse"}>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Add course"
+          ></MenuItem>
+        </Link>
         <Link href={"/contact"}>
           <MenuItem
             setActive={setActive}
